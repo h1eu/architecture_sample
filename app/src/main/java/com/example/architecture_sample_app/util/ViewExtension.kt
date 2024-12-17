@@ -3,6 +3,8 @@ package com.example.architecture_sample_app.util
 import android.os.SystemClock
 import android.view.View
 import android.view.View.OnClickListener
+import android.widget.EditText
+import androidx.core.widget.doAfterTextChanged
 
 fun View.show(){
     this.visibility = View.VISIBLE
@@ -25,4 +27,14 @@ fun View.setPreventDoubleClick(debounceTime: Long = 500, onAction: () -> Unit){
             lastClickTime = SystemClock.elapsedRealtime()
         }
     })
+}
+
+fun EditText.saveTextOnAfterTextChange(): String {
+    var text = ""
+    doAfterTextChanged {
+        it?.apply {
+            text = this.toString()
+        }
+    }
+    return text
 }

@@ -6,7 +6,7 @@ import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import androidx.room.Update
-import com.example.architecture_sample_app.data.local.room.model.KPopIdolEntity
+import com.example.architecture_sample_app.data.local.room.entity.KPopIdolEntity
 
 @Dao
 interface KPopIdolDao {

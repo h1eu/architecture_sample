@@ -13,6 +13,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "base_android_app"
+rootProject.name = "architecture_sample"
 include(":app")
  

@@ -1,4 +1,4 @@
-package com.example.architecture_sample_app.data.local.room.model
+package com.example.architecture_sample_app.data.local.room.entity
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity
@@ -17,7 +17,7 @@ data class KPopIdolEntity(
     var company: String = "",
 
     @ColumnInfo("groups")
-    var groups: String = "",
+    var group: String = "",
 
     @ColumnInfo("role")
     var role: String = ""

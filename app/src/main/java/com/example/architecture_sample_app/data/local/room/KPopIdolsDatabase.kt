@@ -3,7 +3,7 @@ package com.example.architecture_sample_app.data.local.room
 import androidx.room.Database
 import androidx.room.RoomDatabase
 import com.example.architecture_sample_app.data.local.room.dao.KPopIdolDao
-import com.example.architecture_sample_app.data.local.room.model.KPopIdolEntity
+import com.example.architecture_sample_app.data.local.room.entity.KPopIdolEntity
 
 @Database(
     entities = [
